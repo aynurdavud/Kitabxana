@@ -1,0 +1,47 @@
+﻿<!DOCTYPE-html>
+    <html lang='ru'>
+    <head>
+        <title>Kitabxana</title>
+        <meta http-equiv='Content-type' content='text/html;charset=UTF-8' />
+        <meta name="keywords" content="в">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="~/css/stile.css">
+        <script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <form action="#" method="post" enctype="multipart/form-data"></form>
+        <div class="shap_glav">
+            <div class="shap">
+                <a class="logot" asp-controller="Home" asp-action="Index">
+                    <div class="logo">
+                        <img class="logo_book" src="~/img/книга.jpg">
+                    </div>
+                    <p class="farty">Texniki</p>
+                    <p class="lib">Kitabxana</p>
+                </a>
+                <div class="poisk">
+                    <input type="text" placeholder="Açar sözü daxil edin" class="poisk_fon">
+                    <a class="poisk_bt" href="index2.html">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <img class="mm" src="~/img/mm.png"></img>
+                <div class="books">
+                    <a class="up_book" asp-controller="Books" asp-action="Index">Bütün Kitablar</a>
+                    
+                </div>
+            </div>
+        </div>
+        @RenderBody()
+        <div class="down">
+            <a href="https://www.instagram.com"><img class="inst" src="~/img/инст.png"></img></a>
+            <a href="https://discord.com"><img class="ds" src="~/img/дс.png"></img></a>
+            <a href="https://vk.com"><img class="vk" src="~/img/вк.png"></img></a>
+            <a href="https://www.facebook.com"><img class="f" src="~/img/фс.png"></img></a>
+            
+        </div>
+        </div>
+    </body>
+</html>

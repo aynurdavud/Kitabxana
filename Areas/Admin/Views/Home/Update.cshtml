@@ -1,0 +1,59 @@
+﻿@model Home
+@{
+    ViewData["Title"] = "Update";
+}
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="@Model.Photo1"></label>
+        <input asp-for="@Model.Photo1" class="form-control">
+        <span asp-validation-for="@Model.Photo1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Title1"></label>
+        <textarea asp-for="@Model.Title1" class="form-control"></textarea>
+        <span asp-validation-for="@Model.Title1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Description1"></label>
+        <textarea asp-for="@Model.Description1" class="form-control"></textarea>
+        <span asp-validation-for="@Model.Description1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Photo2"></label>
+        <input asp-for="@Model.Photo2" class="form-control">
+        <span asp-validation-for="@Model.Photo2" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Title2"></label>
+        <textarea asp-for="@Model.Title2" class="form-control"></textarea>
+        <span asp-validation-for="@Model.Title2" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Description2"></label>
+        <textarea asp-for="@Model.Description2" class="form-control"></textarea>
+        <span asp-validation-for="@Model.Description2" class="text-danger"></span>
+    </div>
+    @*<div class="form-group">
+            <label asp-for="@Model.Photo2"></label>
+            <input asp-for="@Model.Photo2" class="form-control">
+            <span asp-validation-for="@Model.Photo2" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Title2"></label>
+            <textarea asp-for="@Model.Title2" class="form-control"></textarea>
+            <span asp-validation-for="@Model.Title2" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Description2"></label>
+            <textarea asp-for="@Model.Description2" class="form-control"></textarea>
+            <span asp-validation-for="@Model.Description2" class="text-danger"></span>
+        </div>*@
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-action="Index" class="btn btn-secondary text-light">Go Back</a>
+</form>
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+
+}

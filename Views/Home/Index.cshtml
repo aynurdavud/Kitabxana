@@ -1,0 +1,62 @@
+﻿@model Home
+<div class="container">
+    <div class="moda">
+        <div class="moda_new">
+            <p class="moda_new_text">Popular</p>
+        </div>
+        <a class="book_bt" asp-controller="Abouts" asp-action="Index"></a>
+            <div class="book_cart_parent">
+                <div class="book_cart">
+                    <img class="photo_aftor" src="~/img/@Model.Image1"></img>
+                    <div class="aftor_text">
+                        <p class="aftor_">@Model.Title1</p>
+                        <br>
+
+                    </div>
+                    <div class="book_opis_block" style="word-wrap:break-word">
+                        <p class="book_opis_text">@Model.Description1</p>
+                    </div>
+                </div>
+                <a asp-controller="About" asp-action="Index"></a>
+            </div>
+
+    </div>
+    <div class="recomended">
+        <div class="recomended_text">
+            <p>Tövsiyə olunan</p>
+        </div>
+        <a class="book_bt" asp-controller="Abouts" asp-action="Index">
+            <div class="recommended_block">
+                <div class="book_cart">
+                    <img class="photo_aftor" src="~/img/@Model.Image2"></img>
+                    <div class="aftor_text">
+                        <p class="aftor_">@Model.Title2</p>
+                        <br>
+
+                    </div>
+                    <div class="book_opis_block" style="word-wrap:break-word">
+                        <p class="book_opis_text">@Model.Description2</p>
+                    </div>
+                </div>
+                <a asp-controller="About" asp-action="Index"></a>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="o_nas">
+        <div class="o_nas_text">
+            Haqqımızda
+        </div>
+        <div class="o_nas_block">
+            Saytımızda azərbaycan, rus, ingilis və türk dillərində olan zəngin kitabxana mövcuddur. Bununla yanaşı, yerli və aparıcı beynəlxalq nəşriyyatların materiallarını əldə etmək mümkündür.
+            Əlaqə: +994 50 504 83 47
+            Email:mammadova.shahla.2001@gmail.com
+            <br>
+
+        </div>
+    </div>
+</div>
+
+
+

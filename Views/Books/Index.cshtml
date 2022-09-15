@@ -1,0 +1,34 @@
+﻿@model List<Book>
+<div class="container2">
+    <div class="all_book">
+        <p>Bütün kitablar</p>
+    </div>
+    <div class="library">
+        @foreach (Book item in Model)
+        {
+            <div data-id="@item.Id" class="book_cart_parent">
+                <div class="book_cart">
+                    <img class="photo_aftor" src="~/img/@item.Image"></img>
+                    <div class="aftor_text">
+                        <p class="aftor_">@item.Title</p>
+                        <br>
+                        <a class="btn btn-success" asp-controller="Abouts" asp-action="Index" role="button">Ətraflı</a>
+                    </div>
+                    <div class="book_opis_block" style="word-wrap:break-word">
+                        <p class="book_opis_text">@item.Description</p>
+                       
+
+                    </div>
+                </div>
+                <a asp-controller="About" asp-action="Index"></a>
+            </div>
+        }
+       
+
+
+
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+<script src="script.js"></script>
+	
